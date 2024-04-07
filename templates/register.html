@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Page</title>
+<link rel="stylesheet" href="static/style.css">
+
+<style>
+    
+
+    /* Increase checkbox size */
+    input[type="checkbox"] {
+        transform: scale(1.5);
+        margin-right: -150px;
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form autocomplete="off" action="/register" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="saveIp" name="saveIp" >
+                <label for="saveIp">Save IP for secure login</label>
+            </div>
+            <div class="form-group">
+                <button type="submit" name="register" value="register">Register</button>
+            </div>
+           
+        </form>
+        <div class="error-message">
+
+            <!-- Display error message here -->
+            {% if error==True %}
+            <a>Username already taken</a>
+            {% endif %}
+        </div>
+        <p class="bottom">Already have an account?  <a class="bottom" href="/login"> Sign in here</a></p>
+    </div>
+</body>
+</html>

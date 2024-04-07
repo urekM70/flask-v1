@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List Menu</title>
+    <link rel="stylesheet" href="/static/dashboard.css">
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-item">All Tasks</div>
+        <div class="menu-item">Completed</div>
+        <div class="menu-item">Pending</div>
+    </div>
+    
+    <div>
+        <form action="" autocomplete="off" method="POST"> 
+            <input type="text" id="besPolje" name="besPolje" class="task-input" placeholder="Enter task" required>
+        
+    </div>
+
+    <div class="task-buttons">
+        <button class="task-button" value="add" name="btn" >Add Task</button>
+    </div>
+</form>   
+
+
+        <form action=""  class="tasks"method="POST">
+            <table>
+                {% for task in tasks %}
+                <tr>
+                    <td><div class="task"></td>
+                    <td>{{task}}</td>
+                    <td><button1 class="task-button-comp" id="comp" name="btn">Complete task</button1></td>
+                </div>
+                </tr>
+                {% endfor %}
+            </table>
+        </form>
+    </body>
+    </html>

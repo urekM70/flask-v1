@@ -1,0 +1,125 @@
+ /* CSS styles for the menu */
+ .menu {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #e6e6e6;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: #d9d9d9;
+}
+.task-button-comp {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #e6e6e6;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.tasks td {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tasks td input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.tasks td label {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.tasks td input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #999;
+}
+.task-button-comp:hover {
+    background-color: #d9d9d9;
+}
+.task-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.task-button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #e6e6e6;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.task {
+    margin: 0 auto;
+}
+.task-button:hover {
+    background-color: #d9d9d9;
+}
+
+/* CSS styles for the form */
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 5px;
+}
+
+button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #e6e6e6;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #d9d9d9;
+}
+
+
+
+/* CSS styles for the task list */
+.task-list {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.task {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #e6e6e6;
+    border-radius: 3px;
+}
+.task-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.task-button:hover {
+    background-color: #45a049;
+}
+
+.task-button:active {
+    background-color: #3e8e41;
+}
+
