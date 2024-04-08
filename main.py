@@ -1,7 +1,7 @@
 
 from module import dbAccess
 from module import check
-
+from login import User
 #importa flask
 import flask
 from flask import Flask, request, redirect, render_template, url_for
@@ -30,27 +30,9 @@ def index():
         return redirect("/dashboard")
     else:
         return redirect("/login")
+    
 
-class User:
-    def __init__(self, id, authenticated=True, active=True, anonymous=False):
-        self.id = str(id)
-        self.authenticated = authenticated
-        self.active = active
-        self.anonymous = anonymous
-
-    def is_authenticated(self):
-        return self.authenticated
-
-    def is_active(self):
-        return self.active
-
-    def is_anonymous(self):
-        return self.anonymous
-
-    def get_id(self):
-        return self.id
-
-
+    
 @app.route('/login', methods = ["GET", "POST"])   
 def login():
     error=False
